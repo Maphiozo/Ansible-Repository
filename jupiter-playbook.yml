@@ -18,7 +18,7 @@
         state: latest
 
     - name: copy the webfiles from s3 bucket into the html directory
-      command: aws s3 sunc s3://owolabi-2021 /var/www/html
+      command: aws s3 sync s3://owolabi-2021 /var/www/html
 
     - name: start apache server
       service:
